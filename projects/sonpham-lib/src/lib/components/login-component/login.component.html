@@ -1,0 +1,42 @@
+
+    <form (submit)="UserLogin($event, loginSuccess)">
+    <div class="modal-header">
+        <h4 class="modal-title">Login Form</h4>
+        <!-- <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+      </div>
+      <div class="modal-body">
+        
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" id="userName" required>
+          
+
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" id="password" required>
+       
+      </div>
+    
+      <div class="modal-footer">
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+      </div>
+    </form>
+
+  <ng-template #loginSuccess let-modal>
+      <div class="modal-header">
+          <h4 class="modal-title">Success</h4>
+          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         <p>Welcome: {{loginForm.userName}}</p>
+        </div>
+      
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+        </div>
+    </ng-template>
+  

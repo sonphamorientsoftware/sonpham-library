@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <nav id="sidebar">
+      <ul *ngIf="leftSideBars" class="list-unstyled components">
+         
+          <li *ngFor="let leftSideBar of leftSideBars">
+              <a href="{{leftSideBar.link}}">
+                  <i class="{{leftSideBar.icon}}"></i>
+                  {{leftSideBar.title}}
+              </a>
+          </li>
+      </ul>
+  </nav>
+  <div id="content">
+    <ng-content></ng-content>
+  </div>
+</div> 

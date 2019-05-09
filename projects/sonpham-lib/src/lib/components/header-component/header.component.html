@@ -1,0 +1,15 @@
+<header>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark nav-left">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="{{logo.link}}">
+      <img [src]="logo.logoImage" width="{{logo.width}}" height="{{logo.height}}"/>
+    </a>
+    
+    <!-- Links -->
+    <ul *ngIf="menuItems" class="navbar-nav">
+      <li *ngFor="let menuItem of menuItems" class="nav-item">
+        <a class="nav-link" href="{{menuItem.link}}">{{menuItem.title}}</a>
+     </li>
+    </ul>
+  </nav>
+</header>

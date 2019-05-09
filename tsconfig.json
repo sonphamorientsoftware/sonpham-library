@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "sonpham-lib": [
+        "dist/sonpham-lib"
+      ],
+      "sonpham-lib/*": [
+        "dist/sonpham-lib/*"
+      ]
+    }
   }
 }
