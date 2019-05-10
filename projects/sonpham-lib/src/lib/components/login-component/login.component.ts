@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewEncapsulation  } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { LoginModel } from '../../models/loginModel/LoginModel';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
