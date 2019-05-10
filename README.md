@@ -1,4 +1,4 @@
-# osd-core-ui-lib
+# osd-core-ui
 
 This project library demo for 4 components: Header, LeftSideBar, Footer, Login
 
@@ -99,13 +99,13 @@ You also add Font Awesome's CDN to your project, example via CDN to file index.h
 ```html
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 ```
-### 3. Install osd-core-ui-lib
+### 3. Install osd-core-ui
 
 ```shell
 npm install --save osd-core-ui-sp
 ```
 
-### 4. Import osd-core-ui-lib modules to projects
+### 4. Import osd-core-ui modules to projects
 
 ```ts
 // OsdCoreUILibModule Module include Header component
@@ -128,9 +128,10 @@ imports: [
 ```ts
   // Import Model
   import { OsdMenuItemSPModel } from 'osd-core-ui-sp/osd-core-ui-sp/models/osd-header-sp-model/OsdMenuItemSPModel';
-import { OsdLogoSPModel } from 'osd-core-ui-sp/osd-core-ui-sp/models/osd-header-sp-model/OsdLogoSPModel';
+  import { OsdLogoSPModel } from 'osd-core-ui-sp/osd-core-ui-sp/models/osd-header-sp-model/OsdLogoSPModel';
   // Setting header to render
-  menuItems: OsdMenuItemSPModel[] = [{
+  menuItems: OsdMenuItemSPModel[] = [
+  {
     title : "Menu 1",
     link : "/menu1"
   },
@@ -194,7 +195,7 @@ import { OsdLogoSPModel } from 'osd-core-ui-sp/osd-core-ui-sp/models/osd-header-
   ];
 ```
 
-### How to use sompham-login component
+### How to use osd-login-sp component
 
   Template
 ```html
