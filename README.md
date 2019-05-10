@@ -13,8 +13,6 @@ This project library demo for 4 components: Header, LeftSideBar, Footer, Login
 ------------ MenuItemModel.ts
 ------ leftSideBarModel
 ------------ LeftSideBarModel.ts
------- loginModel
------------- LoginModel.ts
 
 --- services
 ------ footerService
