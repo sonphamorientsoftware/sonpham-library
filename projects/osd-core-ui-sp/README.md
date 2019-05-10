@@ -59,7 +59,7 @@ This project library demo for 4 components: Header, LeftSideBar, Footer, Login
 
 ## Intall npm
 
-NPM link: [https://www.npmjs.com/package/osd-core-ui-sp](https://www.npmjs.com/package/package/osd-core-ui-sp)
+NPM link: [https://www.npmjs.com/package/osd-core-ui-sp](https://www.npmjs.com/package/osd-core-ui-sp)
 
 ```shell
 npm install --save osd-core-ui-sp
