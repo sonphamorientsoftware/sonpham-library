@@ -3,33 +3,33 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sonpham-lib": {
-      "root": "projects/sonpham-lib",
-      "sourceRoot": "projects/sonpham-lib/src",
+    "osd-core-ui-sp": {
+      "root": "projects/osd-core-ui-sp",
+      "sourceRoot": "projects/osd-core-ui-sp/src",
       "projectType": "library",
       "prefix": "sonpham",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/sonpham-lib/tsconfig.lib.json",
-            "project": "projects/sonpham-lib/ng-package.json"
+            "tsConfig": "projects/osd-core-ui-sp/tsconfig.lib.json",
+            "project": "projects/osd-core-ui-sp/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/sonpham-lib/src/test.ts",
-            "tsConfig": "projects/sonpham-lib/tsconfig.spec.json",
-            "karmaConfig": "projects/sonpham-lib/karma.conf.js"
+            "main": "projects/osd-core-ui-sp/src/test.ts",
+            "tsConfig": "projects/osd-core-ui-sp/tsconfig.spec.json",
+            "karmaConfig": "projects/osd-core-ui-sp/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/sonpham-lib/tsconfig.lib.json",
-              "projects/sonpham-lib/tsconfig.spec.json"
+              "projects/osd-core-ui-sp/tsconfig.lib.json",
+              "projects/osd-core-ui-sp/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -167,5 +167,5 @@
       }
     }
   },
-  "defaultProject": "sonpham-lib"
+  "defaultProject": "osd-core-ui-sp"
 }
