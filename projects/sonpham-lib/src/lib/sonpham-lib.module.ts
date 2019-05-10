@@ -6,6 +6,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './components/footer-component/footer.component';
 import { LeftSideBarComponent } from './components/left-side-bar-component/left-side-bar.component';
 import { LoginComponent } from './components/login-component/login.component';
+import { ReactiveFormsModule }    from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { LoginComponent } from './components/login-component/login.component';
   ],
   imports: [ 
     BrowserModule, 
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
+   
   ],
   exports: [
     SonphamLibComponent, 

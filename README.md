@@ -176,7 +176,7 @@ imports: [
 ```html
   <sonpham-left-side-bar [leftSideBars]="leftSideBars">
 
-    --Content website
+    Content website
     <ng-content></ng-content> 
 
   </sonpham-left-side-bar>

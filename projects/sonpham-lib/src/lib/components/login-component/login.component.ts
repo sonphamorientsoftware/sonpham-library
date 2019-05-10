@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation  } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { LoginModel } from '../../models/loginModel/LoginModel'
+import { LoginModel } from '../../models/loginModel/LoginModel';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'sonpham-login',
@@ -10,28 +11,29 @@ import { LoginModel } from '../../models/loginModel/LoginModel'
 })
 export class LoginComponent implements OnInit {
   closeResult: string;
-  loginForm: LoginModel = {
-    userName: "",
-    password: ""
-  };
-  
+  loginForm: FormGroup;
+  submitted = false;
+  loading = false;
 
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal,  private formBuilder: FormBuilder) { }
 
   ngOnInit() {
-    
+    this.loginForm = this.formBuilder.group({
+      username: ['', Validators.required],
+      password: ['', Validators.required]
+  });
   }
 
-  public UserLogin(event, loginSuccess) : void {
-    event.preventDefault();
-    const target = event.target;
-    const userName = target.querySelector("#userName").value;
-    const password = target.querySelector("#password").value;
-
-    this.loginForm.userName = userName;
-    this.loginForm.password = password;
-
+  get f() { return this.loginForm.controls; }
+  public onSubmit(loginSuccess) : void {
+    this.submitted = true;
+    if (this.loginForm.invalid) {
+        return;
+    }
+    this.loading = true;
+    
     this.modalService.open(loginSuccess, { centered: true });
+    this.loading = false;
   }
   
 }
