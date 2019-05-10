@@ -65,9 +65,9 @@ NPM link: [https://www.npmjs.com/package/sonpham-lib](https://www.npmjs.com/pack
 npm install --save sonpham-lib
 ```
 
-## How to use NTDemo-Lib
+## How to use SonPham-Lib
 
-### Before start to use NTDemoLib
+### Before start to use SonPham-Lib
 Please help me to make sure your project installed some dependencies:
   - ng-bootstrap
 ```shell
@@ -99,13 +99,13 @@ You also add Font Awesome's CDN to your project, example via CDN to file index.h
 ```html
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 ```
-### 3. Install NTDemo-Lib
+### 3. Install SonPham-Lib
 
 ```shell
 npm install --save sonpham-lib
 ```
 
-### 4. Import NTDemo-Lib modules to projects
+### 4. Import SonPham-Lib modules to projects
 
 ```ts
 // SonPhamLib Module include Header component
