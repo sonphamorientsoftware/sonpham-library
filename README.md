@@ -1,4 +1,4 @@
-# osd-core-ui
+# osd-core-ui-sp
 
 This project library demo for 4 components: Header, LeftSideBar, Footer, Login
 
@@ -99,17 +99,17 @@ You also add Font Awesome's CDN to your project, example via CDN to file index.h
 ```html
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 ```
-### 3. Install osd-core-ui
+### 3. Install osd-core-ui-sp
 
 ```shell
 npm install --save osd-core-ui-sp
 ```
 
-### 4. Import osd-core-ui modules to projects
+### 4. Import osd-core-ui-sp modules to projects
 
 ```ts
 // OsdCoreUILibModule Module include Header component
-import { OsdCoreUISPLibModule } from 'osd-core-ui';
+import { OsdCoreUISPLibModule } from 'osd-core-ui-sp'
 
 ...
 ...
